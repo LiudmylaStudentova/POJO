@@ -1,3 +1,5 @@
+package utils;
+
 import org.json.simple.JSONObject;
 
 public class JiraJSONObjects {
@@ -6,7 +8,7 @@ public class JiraJSONObjects {
     public static String newIssueJSON() {
         JSONObject newIssueJSON = new JSONObject();
         JSONObject fields = new JSONObject();
-        fields.put("summary", "Test Summary");
+        fields.put("summary", "QA Automation Test Summary");
         JSONObject issuetype = new JSONObject();
         issuetype.put("id", "10107");
         JSONObject project = new JSONObject();

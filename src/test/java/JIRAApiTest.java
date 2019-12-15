@@ -1,12 +1,13 @@
 
 
 import io.qameta.allure.Feature;
-        import io.restassured.path.json.JsonPath;
-        import io.restassured.response.Response;
+import io.restassured.response.Response;
         import org.hamcrest.Matcher;
         import org.hamcrest.text.MatchesPattern;
         import org.testng.annotations.Test;
-        import java.util.regex.Pattern;
+import utils.JiraJSONObjects;
+
+import java.util.regex.Pattern;
 
         import static io.restassured.RestAssured.*;
         import static org.testng.Assert.assertEquals;
@@ -35,7 +36,7 @@ public class JIRAApiTest {
     @Test(groups = {"Regression"})
     public void createAndDeleteIssue(){
 
-        String issueJSON = JiraJSONObjects.newIssueJSON();;// заменяем код с body из postman на JiraJSONObjects.newIssueJSON() из JiraJSONObjects класса
+        String issueJSON = JiraJSONObjects.newIssueJSON();;// заменяем код с body из postman на utils.JiraJSONObjects.newIssueJSON() из utils.JiraJSONObjects класса
 
         //create issue
         Response response = given().

@@ -1,3 +1,5 @@
+package utils;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import pojo.issue.Fields;
@@ -7,7 +9,7 @@ import pojo.issue.Project;
 
 public class Main {
 
-    public static Issue generateJSONForIssue(String projectId, String summary, String issueType, String assignee) {
+    public static  Issue generateJSONForIssue(String projectId, String summary, String issueType, String assignee) {
 
         Issue issuePOJO = new Issue(new Fields()
                                             .setProject(projectId)
