@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 
 import static io.restassured.RestAssured.given;
 
+//pojo
 public class Authorization {
 
     public static String JSESSIONID;

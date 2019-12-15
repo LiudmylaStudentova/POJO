@@ -9,6 +9,7 @@ import utils.JiraJSONObjects;
 
 import static org.testng.Assert.assertEquals;
 
+//json object
 public class JiraAPISteps {
 
     public static Response createIssue() {

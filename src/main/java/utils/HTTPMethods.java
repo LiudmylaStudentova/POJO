@@ -5,6 +5,7 @@ import utils.APIPathes;
 
 import static io.restassured.RestAssured.given;
 
+//json oblect
 public class HTTPMethods {
 
     public static Response post(String urlPath, String body) {
