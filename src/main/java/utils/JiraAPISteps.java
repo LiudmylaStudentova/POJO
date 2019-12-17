@@ -14,7 +14,7 @@ public class JiraAPISteps {
 
     public static Response createIssue() {
         String issueJson = JiraJSONObjects.newIssueJSON();
-        Response response =  HTTPMethods.post(APIPathes.issue, issueJson);
+        Response response = HTTPMethods.post(APIPathes.issue, issueJson);
         return response;
     }
 
@@ -27,5 +27,4 @@ public class JiraAPISteps {
         return response.then().extract().asString();
 
     }
-
 }

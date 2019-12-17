@@ -15,10 +15,10 @@ public class GreateGetIssueTest {
         //create issue in Jira
         Response response = JiraAPISteps.createIssue();
         assertEquals(response.statusCode() , 201);
-         String issueKey =  response.then().extract().path("key");
+        String issueKey =  response.then().extract().path("key");
 
         //get issue in Jira
         JiraAPISteps.getIssue(issueKey);
-            }
+    }
 }
 
